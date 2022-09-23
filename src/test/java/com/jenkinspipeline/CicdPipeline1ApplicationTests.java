@@ -1,5 +1,7 @@
 package com.jenkinspipeline;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.junit.jupiter.api.Test;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -13,6 +15,7 @@ class CicdPipeline1ApplicationTests {
 	@Test
 	void contextLoads() {
 		logger.info("Test Case Executing..!");
+		assertEquals(true, true);
 		
 	}
 

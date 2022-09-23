@@ -16,20 +16,23 @@ public class CicdPipeline1Application {
 
 	
 	
-	Logger logger=(Logger) LoggerFactory.getLogger(CicdPipeline1Application.class);
+	static Logger logger=(Logger) LoggerFactory.getLogger(CicdPipeline1Application.class);
 	
 	@PostConstruct
 	public void intt() {
 		logger.info("Application started Successfully......!");
 	}
 	
-	@GetMapping("/home")
-	public String Hello() {
-		return"Welcome to jenkins_Pipeline";
-	}
+//	@GetMapping("/home")
+//	public String Hello() {
+//		return"Welcome to jenkins_Pipeline";
+	
+	
+//	}
 	
 	 
 	public static void main(String[] args) {
+		logger.info("Application started Successfully......!");
 		
 		SpringApplication.run(CicdPipeline1Application.class, args);
 	}
